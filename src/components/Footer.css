@@ -1,0 +1,16 @@
+.contact-tel,
+.contact-email,
+.contact-city{
+    display: flex;
+    align-items: center;
+}
+.contact-tel,
+.contact-email{
+    padding-bottom: 0.8rem;
+}
+.contact-tel p,
+.contact-email p,
+.contact-city p{
+    margin-bottom: 0;
+    padding-left: 0.5rem;
+}

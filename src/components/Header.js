@@ -1,21 +1,34 @@
-import { Container, Row, Col, Image, Button } from "react-bootstrap";
-import logoCharris from "../logo-lascharris.png";
+import { Carousel } from "react-bootstrap";
+import carouselImage1 from '../assets/images/carousel1.webp';
+import carouselImage2 from '../assets/images/carousel2.webp';
+import carouselImage3 from '../assets/images/carousel3.webp';
 import "./Header.css";
 
 function Header() {
   return (
-    <Container>
-      <Row className="my-5">
-        <Col className="d-flex justify-content-center flex-column">
-          <h1 className="header-title">LasCharris</h1>
-          <h2 className="header-subtitle">Pañuelos de diseño. Somos Ce y Be, concuñadas creativas. ¡Nuestro mundo es un pañuelo!</h2>
-          <Button className="header-button align-self-start">Comprar ahora</Button>
-        </Col>
-        <Col className="d-flex justify-content-center">
-          <Image className="header-image" src={logoCharris}/> 
-        </Col>
-      </Row>
-    </Container>
+    <Carousel className="carousel-container" variant="dark">
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={carouselImage1}
+          alt="Imagen Carrusel"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={carouselImage2}
+          alt="Imagen Carrusel 2"
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={carouselImage3}
+          alt="Imagen Carrusel 3"
+        />
+      </Carousel.Item>
+    </Carousel>
   );
 }
 

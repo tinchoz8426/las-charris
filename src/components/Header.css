@@ -1,22 +1,3 @@
-.header-title{
-    text-transform: uppercase;
-    padding-bottom: 1rem;
-}
-.header-subtitle{
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-}
-.header-image{
-    max-width: 80%;
-    height: auto;
-}
-.header-button{
-    text-transform: uppercase;
-    background-color: var(--color-secundario);
-    color: var(--color-blanco);
-    border: none;
-    padding: 0.8rem 1.5rem;
-}
-.header-button:hover{
-    background-color: var(--color-primario);
+.carousel-container{
+    margin-bottom: 2rem;
 }

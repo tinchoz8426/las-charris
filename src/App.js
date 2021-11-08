@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Subheader from './components/Subheader';
 import ItemListContainer from './components/ItemListContainer';
 import Footer from './components/Footer';
+import ItemCount from './components/ItemCount';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Header/>
       <Subheader/>
       <ItemListContainer message={"Bienvenidos a LASCHARRIS"}/>
+      <ItemCount stock="8" initial="1"/>
       <Footer/>
     </Fragment>
   );

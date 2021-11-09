@@ -31,8 +31,7 @@ function ItemCount(props) {
           Scrunchie
         </Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+         Tenemos un monton de diseños de Scrunchies para que lleves el que mas te guste.
         </Card.Text>
         <div
           style={{

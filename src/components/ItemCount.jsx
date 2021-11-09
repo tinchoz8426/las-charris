@@ -3,6 +3,8 @@ import { Card, Button } from "react-bootstrap";
 import img1 from "../assets/images/img1.jpg";
 
 function ItemCount(props) {
+
+  // Comienzo logica ItemCount
   const [amount, setAmount] = useState(1);
 
   const onIncrease = () => {
@@ -18,6 +20,7 @@ function ItemCount(props) {
       setAmount(newValue);
     }
   };
+  // Final logica ItemCount
 
   return (
     <Card style={{ width: "18rem" }}>

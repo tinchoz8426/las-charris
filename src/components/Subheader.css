@@ -1,5 +1,6 @@
 .row-container{
     gap: 1rem;
+    margin-bottom: 2rem;
 }
 .subcomponent-container{
     background-color: rgba(190, 190, 190, 0.1);

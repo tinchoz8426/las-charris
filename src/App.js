@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Subheader from './components/Subheader';
 import ItemListContainer from './components/ItemListContainer';
 import Footer from './components/Footer';
+import ItemDetailContainer from './components/ItemDetailContainer';
 // import ItemCount from './components/ItemCount';
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
       <NavBar/>
       <Header/>
       <Subheader/>
-      <ItemListContainer/>
+      {/* <ItemListContainer/> */}
       {/* <ItemCount stock="8" initial="1"/> */}
+      <ItemDetailContainer />
       <Footer/>
     </Fragment>
   );

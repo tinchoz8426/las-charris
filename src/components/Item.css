@@ -1,0 +1,9 @@
+.card-container{
+    text-decoration: none;
+    color: #000;
+    transition: ease-in-out 0.2s;
+}
+.card-container:hover{
+    box-shadow:  0px 0px 21px 3px rgba(0,0,0,0.17);
+    color: rgb(79, 192, 172);
+}

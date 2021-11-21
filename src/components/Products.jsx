@@ -1,6 +1,7 @@
 export const products = [
   {
     id: "1",
+    category: "Scrunchies",
     name: "Scrunchie",
     img: "https://res.cloudinary.com/tinchoz8426/image/upload/v1636715435/img1_efa3lm.jpg",
     stock: 5,
@@ -10,6 +11,7 @@ export const products = [
   },
   {
     id: "2",
+    category: "Pañuelos",
     name: "Pañuelo",
     img: "https://res.cloudinary.com/tinchoz8426/image/upload/v1636715690/panuelo_ziz228.jpg",
     stock: 8,
@@ -19,6 +21,7 @@ export const products = [
   },
   {
     id: "3",
+    category: "Perfuminas",
     name: "Perfumina",
     img: "https://res.cloudinary.com/tinchoz8426/image/upload/v1636715510/perfumina_mirxbz.jpg",
     stock: 4,

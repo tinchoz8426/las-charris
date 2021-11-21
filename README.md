@@ -39,6 +39,9 @@ LASCHARRIS es un e-commerce para la venta de pañuelos, scrunchies, perfuminas y
 - [Reac Router DOM](https://www.npmjs.com/package/react-router-dom "Reac Router DOM"): Librería encargada de generar rutas dinámicas facilitando la navegabilidad por la página.
 - [React Spinners](https://www.npmjs.com/package/react-spinners "React Spinners"): Efectos utlizados para mostrar mediante los periodos de carga de la página.
 
+## Muestra de proyecto
+[![Muestra de proyecto](https://media.giphy.com/media/dkrWTjy8Nz3NW0iUPW/giphy.gif "Muestra de proyecto")](https://media.giphy.com/media/dkrWTjy8Nz3NW0iUPW/giphy.gif "Muestra de proyecto")
+
 ## Contacto
 -[Linkedin](https://www.linkedin.com/in/enzo-martin-zotti/ "Linkedin")
 -[Twitter](https://twitter.com/tinchoz8426 "Twitter")

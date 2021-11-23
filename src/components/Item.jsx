@@ -32,7 +32,7 @@ const Item = ({ item }) => {
           >
             <p className="fs-5 mb-0">${item.price}</p>
           </div>
-          <Button style={{backgroundColor:"#ebabba", border:"none", color:"#000"}}>Agregar al carrito</Button>
+          <Button style={{backgroundColor:"rgb(79, 192, 172)", border:"none", color:"#fff"}}>Agregar al carrito</Button>
         </Card.Body>
       </Card>
       </Link>

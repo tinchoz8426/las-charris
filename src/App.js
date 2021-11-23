@@ -17,6 +17,7 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import We from './pages/We';
 import You from './pages/You';
 import Wholesale from './pages/Wholesale';
+import Cart from './components/Cart';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/category" element={<ItemListContainer/>} />
           <Route path="/category/:catId" element={<ItemListContainer/>} />
           <Route path="/product/:itemId" element={<ItemDetailContainer/>} />
+          <Route path="/cart" element={<Cart/>}/>
           <Route path="*" element={ <h1>404 - Página no encontrada</h1> } />
         </Routes>
         <Footer />

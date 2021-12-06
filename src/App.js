@@ -1,46 +1,47 @@
-import { Fragment } from 'react';
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import NavBar from "./components/NavBar";
-import Footer from './components/Footer';
+import NavBar from "./components/NavBar/NavBar"
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import {
   BrowserRouter,
   Routes,
   Route
 } from "react-router-dom";
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import Shipping from './pages/Shipping';
-import PaymentMethods from './pages/PaymentMethods';
-import ItemListContainer from './components/ItemListContainer';
-import ItemDetailContainer from './components/ItemDetailContainer';
-import We from './pages/We';
-import You from './pages/You';
-import Wholesale from './pages/Wholesale';
-import Cart from './components/Cart';
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import { CartProvider } from "./context/CartContext";
+import Cart from './components/Cart/Cart'
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
+import './App.css';
+import Footer from './components/Footer/Footer';
+import We from './views/We';
+import You from './views/You';
+import Shipping from './views/Shipping';
+import PaymentMethods from './views/PaymentMethods';
+import Contact from './views/Contact';
+import Home from './views/Home';
 
 function App() {
   return (
-    <Fragment>
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/we" element={<We />} />
-          <Route path="/you" element={<You />} />
-          <Route path="/wholesale" element={<Wholesale />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/shipping" element={<Shipping />} />
-          <Route path="/payment" element={<PaymentMethods />} />
-          <Route path="/category" element={<ItemListContainer/>} />
-          <Route path="/category/:catId" element={<ItemListContainer/>} />
-          <Route path="/product/:itemId" element={<ItemDetailContainer/>} />
-          <Route path="/cart" element={<Cart/>}/>
-          <Route path="*" element={ <h1>404 - Página no encontrada</h1> } />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </Fragment>
+    <div>
+      <CartProvider>
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/we" element={<We />} />
+            <Route path="/you" element={<You />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/shipping" element={<Shipping />} />
+            <Route path="/payment" element={<PaymentMethods />} />
+            <Route path="/category" element={<ItemListContainer />} />
+            <Route path="/category/:catId" element={<ItemListContainer />} />
+            <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="*" element={<h1>404 - Página no encontrada</h1>} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </CartProvider>
+    </div>
   );
 }
 

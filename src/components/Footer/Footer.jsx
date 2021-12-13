@@ -1,11 +1,11 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faWhatsapp,
-  faInstagram,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailIcon from '@mui/icons-material/Email';
+import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import "./Footer.css";
+import { Link } from "react-router-dom";
+
 
 function Footer() {
   return (
@@ -17,15 +17,15 @@ function Footer() {
               <h3 className="contact-title">Contactanos</h3>
             </div>
             <div className="contact-tel">
-              <FontAwesomeIcon icon={faWhatsapp} size="lg" color="#128C7E" />
+              <WhatsAppIcon />
               <p>221-5940369</p>
             </div>
             <div className="contact-email">
-              <FontAwesomeIcon icon={faEnvelope} size="lg" color="#4285F4" />
+              <EmailIcon/>
               <p>cecimayer@hotmail.com</p>
             </div>
             <div className="contact-city">
-              <FontAwesomeIcon icon={faMapMarkerAlt} size="lg" color="#E50914" />
+              <FmdGoodIcon/>
               <p>La Plata, Buenos Aires</p>
             </div>
           </div>
@@ -35,19 +35,19 @@ function Footer() {
             </div>
             <ul className="links-list-container">
               <li className="links-item">
-                <a href="https://google.com.ar">Categorias</a>
+                <Link as={Link} to="/category">Categorias</Link>
               </li>
               <li className="links-item">
-                <a href="https://google.com.ar">Medios de pago</a>
+                <Link as={Link} to="/payment">Medios de pago</Link>
               </li>
               <li className="links-item">
-                <a href="https://google.com.ar">Envios</a>
+                <Link as={Link} to="/shipping">Envios</Link>
               </li>
               <li className="links-item">
-                <a href="https://google.com.ar">Nosotras</a>
+                <Link as={Link} to="/wip">Nosotras</Link>
               </li>
               <li className="links-item">
-                <a href="https://google.com.ar">Ustedes</a>
+                <Link as={Link} to="/wip">Ustedes</Link>
               </li>
             </ul>
           </div>
@@ -57,19 +57,19 @@ function Footer() {
             </div>
             <ul className="extras-list-container">
               <li className="extras-item">
-                <a href="https://google.com.ar">Tips para pañuelos</a>
+                <Link as={Link} to="/wip">Tips para pañuelos</Link>
               </li>
               <li className="extras-item">
-                <a href="https://google.com.ar">Videos</a>
+                <Link as={Link} to="/wip">Videos</Link>
               </li>
               <li className="extras-item">
-                <a href="https://google.com.ar">Looks</a>
+                <Link as={Link} to="/wip">Looks</Link>
               </li>
               <li className="extras-item">
-                <a href="https://google.com.ar">Venta mayorista</a>
+                <Link as={Link} to="/wip">Venta mayorista</Link>
               </li>
               <li className="extras-item">
-                <a href="https://google.com.ar">FAQS</a>
+                <Link as={Link} to="/wip">FAQS</Link>
               </li>
             </ul>
           </div>
@@ -84,10 +84,8 @@ function Footer() {
                 rel="noreferrer"
                 style={{ color: "black" }}
               >
-                <FontAwesomeIcon
-                  className="instagram-icon"
-                  icon={faInstagram}
-                  size="2x"
+                <InstagramIcon 
+                fontSize="large" className="instagram-icon"
                 />
               </a>
               <a
@@ -96,10 +94,9 @@ function Footer() {
                 rel="noreferrer"
                 style={{ color: "black" }}
               >
-                <FontAwesomeIcon
-                  className="facebook-icon"
-                  icon={faFacebook}
-                  size="2x"
+                <FacebookIcon
+                fontSize="large" 
+                className="facebook-icon"
                 />
               </a>
             </div>

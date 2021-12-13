@@ -1,22 +1,23 @@
+import { Row, Container, Col } from "react-bootstrap";
 import './PaymentMethods.css';
 import paymentImage from "../assets/images/payment-image.png";
 
 const PaymentMethods = () => {
   return (
     <>
-      <div className="container">
-        <div className="row">
+      <Container>
+        <Row>
           <h1 className="text-center pt-5">Nuestros medios de pago</h1>
           <p className="text-center fs-4">
             Pronto iremos añadiendo mas medios de pago, para que puedas elegir
             tu preferido.
           </p>
-        </div>
-        <div className="row payment-container">
-          <div className="col d-flex align-items-center payment-image-container">
+        </Row>
+        <Row className="payment-container">
+          <Col className="d-flex align-items-center payment-image-container">
             <img src={paymentImage} alt="Medios de pago" />
-          </div>
-          <div className="col d-flex align-items-center">
+          </Col>
+          <Col className="d-flex align-items-center">
             <ul className="payment-list">
                 <li>💳 Efectivo</li>
                 <li>💳 Transferencia bancaria</li>
@@ -25,9 +26,9 @@ const PaymentMethods = () => {
                 <li>💳 MODO - Proximamente</li>
                 <li>💳 Tarjetas de credito y debito- Proximamente</li>
             </ul>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };

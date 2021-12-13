@@ -1,6 +1,6 @@
 import workImage from '../assets/images/work-image.png';
 
-const We = () => {
+const UnderConstruction = () => {
   return (
     <>
       <div className="container">
@@ -15,4 +15,4 @@ const We = () => {
   );
 };
 
-export default We;
+export default UnderConstruction;

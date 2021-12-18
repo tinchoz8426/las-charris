@@ -9,8 +9,6 @@ import ItemCart from "./ItemCart";
 
 const Cart = () => {
 
-
-
   const { cart, clearCart, cartWidgetItems, totalPrice } = useCart();
   const total = totalPrice();
   const [buttonState, setButtonState] = useState(true);
@@ -18,6 +16,7 @@ const Cart = () => {
     name: "",
     phone: "",
     email: "",
+    emailConfirm: "",
   });
   const handleChange = (event) => {
     setFormInfo({ ...formInfo, [event.target.name]: event.target.value });
@@ -72,9 +71,9 @@ const Cart = () => {
         <div className="no-items">
           {cartWidgetItems() > 0 ? (
             cart.map((i) => (
-              <>
+              
                 <ItemCart
-                  key={i.item.id}
+                  key={i.item.img}
                   title={i.item.title}
                   price={i.item.price}
                   description={i.item.description}
@@ -82,7 +81,7 @@ const Cart = () => {
                   id={i.item.id}
                   quantity={i.quantity}
                 />
-              </>
+              
             ))
           ) : (
             <>
@@ -128,35 +127,48 @@ const Cart = () => {
                       name="name"
                       value={formInfo.name}
                       onChange={handleChange}
+                      required
                     />
                   
                   
                     <input
                       className="input-tel"
                       placeholder="Telefono"
-                      type="text"
+                      type="number"
                       name="phone"
                       value={formInfo.phone}
                       onChange={handleChange}
+                      required
                     />
                   
                   
                     <input
                       className="input-email"
                       placeholder="Correo electronico"
-                      type="text"
+                      type="email"
                       name="email"
                       value={formInfo.email}
                       onChange={handleChange}
+                      required
+                    />
+
+                    <input
+                      className="input-email"
+                      placeholder="Confirma tu Correo electronico"
+                      type="email"
+                      name="emailConfirm"
+                      value={formInfo.emailConfirm}
+                      onChange={handleChange}
+                      required
                     />
 
                   {buttonState ? (
                     <button
                       className="botonFinalizar"
                       disabled={
-                        !(formInfo.name && formInfo.phone && formInfo.email)
+                        !(formInfo.name && (formInfo.phone.length > 10 && formInfo.phone.length <13) && formInfo.email.includes("@" && ".") && (formInfo.email === formInfo.emailConfirm) && !formInfo.name.required)
                       }
-                      type="button"
+                      type="submit"
                       onClick={checkOut}
                     >
                       FINALIZAR COMPRA

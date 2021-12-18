@@ -28,7 +28,7 @@ const Mailer = () => {
 
   return (
     <>
-      <div className="form-container">
+      <div className="form-container-contact">
         <img src={formImage} alt="Formulario" />
         <form className="form" onSubmit={sendEmail}>
           <input

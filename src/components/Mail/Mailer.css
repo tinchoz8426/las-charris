@@ -9,7 +9,7 @@
     margin-left: auto;
     margin-bottom: 1rem;
 }
-.form-container {
+.form-container-contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@
     display: flex;
     flex-direction: column;
 }
-.form-container img {
+.form-container-contact img {
     width: 40%;
     height: 40%;
 }

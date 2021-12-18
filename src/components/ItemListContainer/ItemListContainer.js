@@ -33,7 +33,6 @@ const ItemListContainer = () => {
       } else {
         let data = snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
         setItems(data);
-
       }
       setLoader(false);
     });

@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBFSHoLm9F1VL0kHqpK5rXKU_hp5kQy_XA",
-  authDomain: "las-charris.firebaseapp.com",
-  projectId: "las-charris",
-  storageBucket: "las-charris.appspot.com",
-  messagingSenderId: "831828399646",
-  appId: "1:831828399646:web:7d38413a3bb93a70ed400f",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
   // measurementId: "${config.measurementId}"
 };
 

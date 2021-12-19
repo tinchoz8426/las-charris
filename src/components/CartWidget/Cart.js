@@ -35,7 +35,14 @@ const Cart = () => {
       clearCart(data);
       Swal.fire({
         title: "Compra realizada con éxito",
-        text: `ID de la compra es: ${data.id}`,
+        html:
+        `El ID de su compra es: <b> ${data.id}</b>.` +
+        '</br> ' + 
+        '</br>' +
+        `El monto total de su compra es de $ ${total}.` +
+        '</br> ' + 
+        '</br>' +
+        `Fecha de la compra: ${new Date().toLocaleString()}`,
         icon: "success",
         confirmButtonText: "OK",
       }); 

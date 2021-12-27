@@ -6,14 +6,17 @@
 
 LASCHARRIS es un e-commerce para la venta de pañuelos, scrunchies, perfuminas y lazos.
 
+#### Deploy del sitio web: https://las-charris.web.app/
+
 ## Cuenta al momento de la entrega con:
-- Filtro por categorías: tomando las categorías, al momento de la entrega de un json de productos (Products.jsx).
-- Carrito: Al momento de la entrega es estatico.
+- Filtro por categorías: tomando las categorías, desde la base de datos de Firebase (Firestore database)
+- Carrito: Posibilidad de agregar y eliminar productos, visualizar los productos agregados y terminar la compra.
 - Vistas de listas de productos: vista general de productos con foto y detalles mínimos.
 - Vista de detalles: vista con todos los detalles del producto y la opción de agregar una cantidad del mismo (esto ultimo al momento es estatico).
 - Barra de navegación y footer (al momento el footer es estatico). Barra de navegacion funcional con react router
 - Formulario de contacto funcional.
-- Proximamente se sumaran otras funcionalidades y se mejoraran otras.
+- Stock funcional, desde la base de datos creada con Firebase. Cada vez que se realiza el pedido se descuentan los productos comprados y se actualiza el stock desde la base de datos.
+- Finalización de compra con entraga de ID de compra, fecha y monto total de la misma.
 
 ## Pasos para ver el sitio desde local
 1. Desde la opcion Code copiamos el link HTTPS:
@@ -41,8 +44,10 @@ LASCHARRIS es un e-commerce para la venta de pañuelos, scrunchies, perfuminas y
 - [React Spinners](https://www.npmjs.com/package/react-spinners "React Spinners"): Efectos utlizados para mostrar mediante los periodos de carga de la página.
 - [Firebase](https://firebase.google.com/ "Firebase"): Utilizo firebase para guardar en una base de datos (Firestore) los productos que se muestran en el sitio con todas sus características. Ademas de implementar un sistema de stock y simulacion de compra que genera un ID unico.
 
-## Muestra de proyecto
-[![Muestra de proyecto](https://media.giphy.com/media/dkrWTjy8Nz3NW0iUPW/giphy.gif "Muestra de proyecto")](https://media.giphy.com/media/dkrWTjy8Nz3NW0iUPW/giphy.gif "Muestra de proyecto")
+## Muestra de proyecto 
+[![Muestra de proyecto](https://media.giphy.com/media/h9HrUP0oOcbjKUU895/giphy-downsized-large.gif "Muestra de proyecto")](https://media.giphy.com/media/dkrWTjy8Nz3NW0iUPW/giphy.gif "Muestra de proyecto")
+
+### Tambien lo podes ver en Youtube: https://youtu.be/0iHC_iiT_vI
 
 ## Contacto
 -[Linkedin](https://www.linkedin.com/in/enzo-martin-zotti/ "Linkedin")
